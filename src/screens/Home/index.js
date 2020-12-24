@@ -1,8 +1,7 @@
 import React from 'react';
 import {FlatList, View, Dimensions} from 'react-native';
 import Post from '../../components/Post';
-
-import posts from '../../data/posts';
+import {API, graphqlOperation} from 'aws-amplify';
 
 const Home = () => {
   return (
